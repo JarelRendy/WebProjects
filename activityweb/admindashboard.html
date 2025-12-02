@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="admindashboard.css" />
+</head>
+<body>
+  <div class="dashboard-container">
+    <div class="sidebar">
+      <div class="sidebar-header">
+        <img src="lereylogo.jpg" alt="Logo" class="logo" />
+        <h3>Admin Dashboard</h3>
+      </div>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#profile">Profile</a></li>
+        <li><a href="#settings">Settings</a></li>
+        <li><a href="#logout">Logout</a></li>
+      </ul>
+    </div>
+
+    <div class="content">
+      <h2>Welcome, <span id="roleName"></span></h2>
+
+      <div id="roleContent">
+        <!-- Dynamic content based on role will be injected here -->
+      </div>
+    </div>
+  </div>
+
+  <script src="admindasghboard.js"></script>
+</body>
+</html>

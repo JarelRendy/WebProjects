@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Register</title>
+  <link rel="stylesheet" href="adminsignup.css" />
+</head>
+<body>
+  <div class="background"></div>
+  <div class="login-container">
+    <div class="login-box">
+      <img src="lereylogo.jpg" alt="Brand Logo" class="logo" />
+      <h2>Admin Register</h2>
+
+      <form id="adminSignupForm">
+        <div class="form-grid">
+          <input type="text" name="firstname" placeholder="First Name" required />
+          <input type="text" name="lastname" placeholder="Last Name" required />
+          <select name="position" required>
+            <option value="">Select Position</option>
+            <option value="Staff">Staff</option>
+            <option value="Manager">Manager</option>
+            <option value="Owner">Owner</option>
+          </select>
+          <input type="email" name="email" placeholder="Email Address" required />
+          <input type="text" name="phone" placeholder="Phone Number" required />
+        </div>
+
+        <div class="password-container">
+          <input type="password" name="password" id="password" placeholder="Create Password" required />
+          <span id="togglePassword" class="toggle-password">&#128065;</span>
+        </div>
+
+        <div class="password-container">
+          <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm Password" required />
+          <span id="toggleConfirmPassword" class="toggle-password">&#128065;</span>
+        </div>
+
+        <button type="submit">Register</button>
+      </form>
+
+      <p class="signup-link">Already have an account? <a href="adminlog.html">Login</a></p>
+    </div>
+  </div>
+
+  <script src="adminsignup.js"></script>
+</body>
+</html>

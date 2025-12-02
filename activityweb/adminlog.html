@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Login</title>
+  <link rel="stylesheet" href="adminlog.css" />
+</head>
+<body>
+  <div class="background"></div>
+  <div class="login-container">
+    <div class="login-box">
+      <img src="lereylogo.jpg" alt="Brand Logo" class="logo" />
+      <h2>Admin Login</h2>
+      <form id="adminLoginForm">
+        <input type="email" name="email" placeholder="Email" required />
+        <input type="tel" name="phone" placeholder="Phone Number" required />
+        
+        <select name="role" required>
+          <option value="" disabled selected>Select Role</option>
+          <option value="staff">Staff</option>
+          <option value="manager">Manager</option>
+          <option value="owner">Owner</option>
+        </select>
+
+        <div class="password-container">
+          <input type="password" name="password" id="password" placeholder="Password" required />
+          <span id="togglePassword" class="toggle-password">&#128065;</span>
+        </div>
+        <button type="submit">Continue</button>
+      </form>
+      
+      <a href="adminforgetpass.html">Forgot password?</a>
+      <p class="signup-link">Don't have an account? <a href="adminsignup.html">Sign up</a></p>
+    </div>
+  </div>
+
+  <script src="adminlog.js"></script>
+</body>
+</html>

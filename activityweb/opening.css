@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: url('lerayBG.png') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.opening-container {
+  text-align: center;
+  background-color: white; 
+  padding: 50px 30px; /* smaller padding */
+  border-radius: 12px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+  max-width:470px; /* smaller container */
+  width: 90%;
+  height: 500px;
+}
+
+.logo {
+  width: 100%; 
+  max-width: 350px; /* Bigger logo */
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #333; /* fixed - should not be white over white */
+}
+
+p {
+  font-size: 16px;
+  color: black;
+  margin-bottom: 25px;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.login-button {
+  text-decoration: none;
+  background-color: #0095f6;
+  color: white;
+  padding: 12px;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+  font-size: 16px;
+}
+
+.login-button:hover {
+  background-color: #007cd1;
+}
+
+/* Admin button becomes small link */
+.login-button.admin {
+  background: none;
+  color: #555;
+  font-size: 14px;
+  padding: 0;
+  margin-top: 10px;
+  font-weight: normal;
+  text-decoration: underline;
+}
+
+.login-button.admin:hover {
+  color: #000;
+  background: none;
+}

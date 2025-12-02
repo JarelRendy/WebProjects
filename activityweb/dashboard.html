@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Dashboard</title>
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <div class="dashboard-container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <div class="logo">
+        <img src="lereylogo.jpg" alt="le'Ray Logo">
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Dashboard</a></li>
+          <li><a href="#">My Bookings</a></li>
+          <li><a href="#">Settings</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <header>
+        <h1>Welcome to Le'Ray Aesthetic and Wellness Center</h1>
+      </header>
+
+      <!-- Booking System -->
+      <section class="booking-section">
+        <h2>Book an Appointment</h2>
+        <form id="bookingForm">
+          <label for="service">Select Service:</label>
+          <select name="service" id="service" required>
+            <!-- FACIAL SERVICES -->
+            <optgroup label="FACIAL SERVICES">
+              <option value="BASIC FACIAL">BASIC FACIAL - ₱899</option>
+              <option value="ACNE FACIAL">ACNE FACIAL - ₱999</option>
+              <option value="LERAY SIGNATURE FACIAL">LERAY SIGNATURE FACIAL - ₱2499</option>
+              <option value="LERAY DIAMOND FACIAL">LERAY DIAMOND FACIAL - ₱1999</option>
+              <option value="LERAY HYDRA FACIAL">LERAY HYDRA FACIAL - ₱1999</option>
+              <option value="ACNE SHOT TREATMENT">ACNE SHOT TREATMENT - ₱100/shot</option>
+              <option value="POLITISH TREATMENT">POLITISH TREATMENT - ₱499</option>
+              <option value="CONSUMER TREATMENT">CONSUMER TREATMENT - ₱499</option>
+            </optgroup>
+            
+            <!-- SLIMMING SERVICES -->
+            <optgroup label="SLIMMING SERVICES">
+              <option value="LIPO CAVITATION">LIPO CAVITATION - ₱600/session</option>
+              <option value="BE FACE CONTOURING">BE FACE CONTOURING - ₱499/session</option>
+              <option value="BE ARMS/THIGHS">BE ARMS/THIGHS - ₱550/session</option>
+              <option value="BE TUMMY">BE TUMMY - ₱550/session</option>
+              <option value="MESOTHERAPY">MESOTHERAPY - Starts at ₱2500</option>
+              <option value="BE BARBIE ARMS">BE BARBIE ARMS - Starts at ₱1999</option>
+            </optgroup>
+            
+            <!-- SKIN TREATMENTS -->
+            <optgroup label="SKIN TREATMENTS">
+              <option value="MILLA REMOVAL">MILLA REMOVAL - ₱799</option>
+              <option value="SYRINGOMA REMOVAL">SYRINGOMA REMOVAL - ₱999</option>
+              <option value="SKIN TAG REMOVAL">SKIN TAG REMOVAL - ₱999</option>
+              <option value="WARTS REMOVAL">WARTS REMOVAL - ₱999</option>
+            </optgroup>
+            
+            <!-- SHR/IPL (LASER HAIR REMOVAL) -->
+            <optgroup label="LASER HAIR REMOVAL">
+              <option value="UPPER LIP">UPPER LIP - ₱600/₱500</option>
+              <option value="LOWER LIP">LOWER LIP - ₱600/₱500</option>
+              <option value="UNDERARM">UNDERARM - ₱699/₱599</option>
+              <option value="BIKINI AREA">BIKINI AREA - ₱800/₱700</option>
+              <option value="FACE">FACE - ₱950/₱850</option>
+              <option value="LOWER LEGS">LOWER LEGS - ₱1499/₱1399</option>
+              <option value="LOWER ARMS">LOWER ARMS - ₱1499/₱1399</option>
+              <option value="FULL LEGS">FULL LEGS - ₱2499/₱2399</option>
+              <option value="FULL ARMS">FULL ARMS - ₱2499/₱2399</option>
+            </optgroup>
+            
+            <!-- LASER TREATMENTS -->
+            <optgroup label="LASER TREATMENTS">
+              <option value="CO2 FRACTIONAL LASER">CO2 FRACTIONAL LASER - ₱2500</option>
+              <option value="PICO LASER">PICO LASER - ₱1799</option>
+              <option value="CARBON LASER">CARBON LASER - ₱1599</option>
+              <option value="MELASMA REMOVAL">MELASMA REMOVAL - ₱1799</option>
+              <option value="TATTOO REMOVAL">TATTOO REMOVAL - ₱2500</option>
+            </optgroup>
+            
+            <!-- WHITENING/ANTI-AGING -->
+            <optgroup label="WHITENING/ANTI-AGING">
+              <option value="GLUTA SINGLE DOSE">GLUTA SINGLE DOSE - ₱950</option>
+              <option value="GLUTA DOUBLE DOSE">GLUTA DOUBLE DOSE - ₱4499</option>
+              <option value="LERAY SIGNATURE GLUTA">LERAY SIGNATURE GLUTA - ₱2599</option>
+              <option value="LERAY SLIMMING DRIP">LERAY SLIMMING DRIP - ₱1599</option>
+              <option value="LERAY GLOWDRIP">LERAY GLOWDRIP - ₱1799</option>
+              <option value="PLACENTA SHOT">PLACENTA SHOT - ₱999</option>
+              <option value="STEMCELL SHOT">STEMCELL SHOT</option>
+              <option value="L-CARNITINE SHOT">L-CARNITINE SHOT - ₱999</option>
+            </optgroup>
+            
+            <!-- MICRONEEDLING -->
+            <optgroup label="MICRONEEDLING">
+              <option value="LERAY Micro-Bright">LERAY Micro-Bright - ₱1199/session</option>
+              <option value="LERAY Micro-Regenerate">LERAY Micro-Regenerate - ₱1299/session</option>
+              <option value="LERAY Micro-Moisture">LERAY Micro-Moisture - ₱1299/session</option>
+              <option value="LERAY Micro-Acne">LERAY Micro-Acne - ₱999/session</option>
+              <option value="LERAY Micro-Whitening">LERAY Micro-Whitening - ₱1399/session</option>
+            </optgroup>
+            
+            <!-- SEMI PERMANENT MAKE-UP -->
+            <optgroup label="SEMI PERMANENT MAKE-UP">
+              <option value="BB GLOW (Face)">BB GLOW (Face) - ₱1599</option>
+              <option value="BB GLOW (Face and Mesh)">BB GLOW (Face and Mesh) - ₱1999</option>
+              <option value="BB GLOW (Face and Blush)">BB GLOW (Face and Blush) - ₱1999</option>
+              <option value="BB GLOW (Mesh)">BB GLOW (Mesh) - ₱599</option>
+              <option value="BB BLUSH">BB BLUSH - ₱599</option>
+              <option value="BB LIPS">BB LIPS - ₱1699</option>
+              <option value="FULL FACE PACKAGE">FULL FACE PACKAGE - ₱3500</option>
+            </optgroup>
+            
+            <!-- EYELASH EXTENSION -->
+            <optgroup label="EYELASH EXTENSION">
+              <option value="CLASSIC LOOK">CLASSIC LOOK</option>
+              <option value="OPEN EYE LOOK">OPEN EYE LOOK - ₱699</option>
+              <option value="CAT EYE LOOK">CAT EYE LOOK - ₱699</option>
+              <option value="BABY DOLL LOOK">BABY DOLL LOOK - ₱999</option>
+              <option value="SOURRIEL LOOK">SOURRIEL LOOK - ₱699</option>
+              <option value="VOLUME LASH">VOLUME LASH - ₱150</option>
+              <option value="MEGAVOLUME LASH">MEGAVOLUME LASH - ₱200</option>
+              <option value="KOREAN LASH LIFT">KOREAN LASH LIFT - ₱499</option>
+              <option value="LASH REMOVAL">LASH REMOVAL - ₱250</option>
+            </optgroup>
+            
+            <!-- NAIL CARE SERVICES -->
+            <optgroup label="NAIL CARE SERVICES">
+              <option value="REGULAR MANICURE">REGULAR MANICURE - ₱190</option>
+              <option value="REGULAR PEDICURE">REGULAR PEDICURE - ₱200</option>
+              <option value="REGULAR MANI/PEDI">REGULAR MANI/PEDI - ₱350</option>
+              <option value="GEL MANICURE">GEL MANICURE - ₱450</option>
+              <option value="GEL PEDICURE">GEL PEDICURE - ₱400</option>
+              <option value="GEL MANI/PEDI">GEL MANI/PEDI - ₱450</option>
+              <option value="NAIL EXTENSIONS">NAIL EXTENSIONS - Starts at ₱999</option>
+            </optgroup>
+            
+            <!-- SPA SERVICES -->
+            <optgroup label="SPA SERVICES">
+              <option value="FOOT SPA">FOOT SPA - ₱380</option>
+              <option value="FOOT SPA WITH PEDICURE">FOOT SPA WITH PEDICURE - ₱500</option>
+              <option value="MANI/PEDI AND FOOT SPA">MANI/PEDI AND FOOT SPA - ₱650</option>
+            </optgroup>
+          </select>
+
+          <label for="appointmentTime">Select Time:</label>
+          <input type="datetime-local" name="appointmentTime" id="appointmentTime" required>
+
+          <button type="submit">Book Appointment</button>
+        </form>
+        <div id="bookingStatus"></div>
+      </section>
+
+      <!-- Real-time Status -->
+      <section class="real-time-section">
+        <button id="realTimeButton">Get Real-Time Status</button>
+        <div id="realTimeStatus"></div>
+      </section>
+    </div>
+  </div>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>

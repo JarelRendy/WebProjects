@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register</title>
+  <link rel="stylesheet" href="signup.css" />
+</head>
+<body>
+  <!-- Main background -->
+  <div class="background"></div>
+  
+  <!-- Container for the side images -->
+  <div class="image-container">
+    <img src="sidedesign.jpg" alt="Side Design Left" class="side-image-left">
+    <img src="sidedesign2.jpg" alt="Side Design Right" class="side-image-right">
+  </div>
+
+  <div class="signup-container">
+    <div class="signup-box">
+      <img src="lereylogo.jpg" alt="Brand Logo" class="logo" />
+      <h2>Register and Book Appointment with Us!</h2>
+
+      <form id="signupForm">
+        <input type="email" name="email" placeholder="Email" required />
+        <input type="text" name="phone" placeholder="Phone Number" required />
+        <input type="text" name="name" placeholder="Name" required />
+
+        <div class="password-container">
+          <input type="password" name="password" id="password" placeholder="Password" required />
+          <span id="togglePassword" class="toggle-password">&#128065;</span>
+        </div>
+
+        <div class="password-container">
+          <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm Password" required />
+          <span id="toggleConfirmPassword" class="toggle-password">&#128065;</span>
+        </div>
+
+        <button type="submit">Register</button>
+      </form>
+
+      <!-- Already have an account? Link -->
+      <div class="login-link">
+        <p>Already have an account? <a href="log.html">Login here</a></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="signup.js"></script>
+</body>
+</html>

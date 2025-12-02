@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: rgba(114,123,140,255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  max-width: 1000px; /* pinalaki para hindi siksik */
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  height: 560px;
+}
+
+.phone-image img {
+  width: 450px; /* mas malaki na rin */
+  height: auto;
+}
+
+.login-box {
+  background: #fff;
+  padding: 50px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px; /* mas malapad */
+}
+
+.logo {
+  width: 220px; /* pinalaking logo */
+  margin-bottom: 30px; /* dagdag space sa baba */
+}
+
+form input {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  background: #fafafa;
+  border: 1px solid #dbdbdb;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #727b8c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+form button:hover {
+  background-color: #5a6474;
+}
+
+.divider {
+  margin: 20px 0;
+  font-size: 13px;
+  color: #8e8e8e;
+}
+
+.facebook-login {
+  background: none;
+  border: none;
+  color: #385185;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+a {
+  font-size: 12px;
+  color: #727b8c;
+  margin-top: 000.01px;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.signup-text {
+  font-size: 14px;
+  margin: 20px 0;
+  color: #8e8e8e;
+}
+
+.signup-text a {
+  color: #727b8c;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.signup-text a:hover {
+  text-decoration: underline;
+}
