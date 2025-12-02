@@ -1,0 +1,152 @@
+/* Body styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: url('maingatecrop.png') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container (login wrapper) */
+.login-wrapper {
+    background-color: rgba(238, 174, 206, 0.85); /* Transparent white */
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 450px;
+    width: 100%;
+    color: #000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Logo at the top */
+/* Logo at the top */
+.logo-top {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo-top img {
+    width: 300px;
+    height: 280px;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+/* Title styling */
+.title, h2 {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #e91e63;
+    padding-bottom: 10px;
+}
+
+/* Input fields */
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+    width: 100%;
+    padding: 12px 60px 12px 15px; /* extra right padding for the show button */
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    background-color: #fff;
+    color: #000;
+}
+
+/* Show/hide password container */
+.password-container {
+    position: relative;
+}
+
+/* Show/Hide text */
+.toggle-password {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 14px;
+    color: #e91e63;
+    font-weight: bold;
+    user-select: none;
+}
+
+/* Submit button */
+button,
+.btn {
+    background-color: #e91e63;
+    color: white;
+    padding: 14px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover,
+.btn:hover {
+    background-color: #d81b60;
+}
+
+/* Remember me and links */
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.remember-forgot a {
+    color: #e91e63;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+/* Bottom links */
+.bottom-links {
+    text-align: center;
+    font-size: 14px;
+}
+
+.bottom-links a {
+    color: #e91e63;
+    text-decoration: none;
+}
+
+.bottom-links a:hover {
+    text-decoration: underline;
+}
+
+/* Error/success messages */
+.error {
+    font-size: 14px;
+    margin-top: 10px;
+    color: red;
+    text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 400px) {
+    .logo-top img {
+        width: 800px;
+    }
+}
+

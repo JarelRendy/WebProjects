@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background: url("maingatecrop.png") no-repeat center center fixed;
+  background-size: cover;
+  color: #ba3c66;
+  display: flex;
+  flex-direction: column;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 60px 20px 40px;
+}
+
+.content {
+  max-width: 700px;
+  margin: 0 auto;
+  margin-top: 40px;
+  text-align: center;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 20px;
+  margin-bottom: 66px;
+  color: #ccc;
+}
+
+.section-title {
+  margin: 100px 0 10px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin: 20px 0;
+}
+
+.btn {
+  padding: 16px 40px;
+  font-size: 18px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+   border: 2px solid #ba3c66;
+  background-color: transparent;
+  
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #ba3c66;
+}
+
+.btn.outline {
+  background-color: transparent;
+  border: 2px solid #ba3c66;
+  color: #fff;
+}
+
+.btn.outline:hover {
+  background-color: #ba3c66;
+  color: #fff;
+  
+}

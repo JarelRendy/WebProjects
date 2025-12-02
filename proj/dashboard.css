@@ -1,0 +1,35 @@
+ body {
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        h1, h2, h3, h4, h5, h6, .navbar-brand {
+            font-family: 'Jost', sans-serif;
+        }
+
+       
+        .hero h1 {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .custom-nav .nav-link {
+            font-size: 0.85rem;
+            color: white;
+            transition: color 0.3s ease;
+        }
+
+        .custom-nav .nav-link:hover {
+            color:rgb(0, 0, 0); 
+        }
+
+            .card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05); 
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); 
+        }
+
+       

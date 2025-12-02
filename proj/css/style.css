@@ -1,0 +1,133 @@
+/* Background Image and Body Styling */
+body {
+  background-image: url('maingate.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0 20px;
+  justify-content: flex-start;
+  backdrop-filter: blur(3px);
+}
+
+/* Logo */
+.logo-top {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+.logo-top img {
+  width: 100px;
+}
+
+/* Login Container */
+.container {
+  background-color: #f2e4f9;
+  border-radius: 20px;
+  padding: 30px 40px;
+  width: 320px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Title */
+.title {
+  font-size: 28px;
+  color: #e91e63;
+  margin-bottom: 20px;
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 6px;
+}
+
+.title::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #e91e63;
+  bottom: 0;
+  left: 0;
+  border-radius: 2px;
+}
+
+/* Inputs */
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 14px 45px 14px 15px;
+  margin: 12px 0;
+  border: 2px solid #ef5da8;
+  border-radius: 15px;
+  font-size: 16px;
+  box-sizing: border-box;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #e91e63;
+}
+
+/* Password Wrapper */
+.password-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  user-select: none;
+  font-size: 18px;
+  color: #e91e63;
+}
+
+/* Button */
+.btn {
+  background-color: #ef5da8;
+  color: white;
+  padding: 14px;
+  width: 100%;
+  border: none;
+  border-radius: 15px;
+  margin-top: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #e91e63;
+}
+
+/* Messages */
+p {
+  font-size: 14px;
+  margin-top: 12px;
+}
+
+/* Responsive */
+@media (max-width: 400px) {
+  .container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .logo-top img {
+    width: 80px;
+  }
+}
